@@ -26,15 +26,15 @@
     <nav class="min-h-[100px] p-3 flex justify-between items-center max-w-[1280px] mx-auto">
         <div class="flex items-center ">
             <img src="./assets/logo.png" class="w-12" alt="">
-            <h2 class="text-[#006747] text-2xl leading-5 font-bold ml-4">Emergency <br> service</h2>
+            <h2 id="heading" class="text-[#006747] text-2xl leading-5 font-bold ml-4">Emergency <br> service</h2>
         </div>
-        <div class="flex items-center ">
+        <div class="md:flex  items-center ">
             <div class="w-[100px] bg-[#41ff6b1a] flex items-center justify-center rounded-[132px] p-3 ml-4">
-                <p class="font-bold text-lg">0</p>
+                <p id="heart-count" class="font-bold text-lg">0</p>
                 <img src="./assets/heart.png" class="w-5 ml-3" alt="">
             </div>
             <div class="w-[100px] bg-[#41ff6b1a] flex items-center justify-center rounded-[132px] p-3 ml-4">
-                <p class="font-bold text-lg">100</p>
+                <p id="coin-count" class="font-bold text-lg">100</p>
                 <img src="./assets/coin.png" class="w-5 ml-3" alt="">
             </div>
             <div class="w-[100px] bg-[#00A63E] flex items-center justify-center rounded-[132px] p-3 ml-4">
@@ -55,26 +55,27 @@
     </div>
 
     <!-- card section -->
-     <div class="bg-[#f5fff6]">
-        <div class="card-container max-w-[1280px] mx-auto   p-3 py-10 grid grid-cols-4 gap-5">
+    <div class="bg-[#f5fff6]">
+         <div class=" max-w-[1280px] mx-auto md:flex gap-5">
+        <div class="card-container max-w-[1280px] mx-auto md:w-3/4  p-3 py-10 grid grid-cols-2 md:grid-cols-3 gap-5">
             <div class="card bg-white rounded-lg   p-5 shadow-md">
                 <div class="flex items-center justify-between">
                     <img src="./assets/emergency.png" alt="" class="w-[60px] h-[60px]">
-                    <span class="w-[24px] h-[24px]"><i class="fa-regular fa-heart"></i></span>
+                    <span class="heart w-[24px] h-[24px]"><i class="fa-regular fa-heart"></i></span>
                 </div>
-                <h4 class="text-[20px] font-bold mt-4 mb-0">National Emergency Number</h4>
+                <h4 class="text-[20px] font-bold mt-4 mb-0">National Emergency Service</h4>
                 <p class="text-gray-500">National Emergency</p>
                 <h1 class="font-bold text-[30px] mt-5 mb-0">999</h1>
                 <div class="flex items-center justify-center bg-gray-100 h-[25px] w-[60px]  rounded-3xl py-5"><p>All</p></div>
                 <div class="flex gap-2 mt-5 mb-0">
                     <button class="border-1 border-gray-400 p-3 w-1/2 rounded-lg"><i class="fa-regular fa-clone mr-3"></i>Coppy</button>
-                    <button class="border-1 border-gray-400 p-3 w-1/2 rounded-lg  bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-3"></i>Call</button>
+                    <button class="call-button border-1 border-gray-400 p-3 w-1/2 rounded-lg  bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-3"></i>Call</button>
                 </div>
             </div>
             <div class="card bg-white rounded-lg  min-h-[300px] max-w-[360px] p-5 shadow-md">
                 <div class="flex items-center justify-between">
                     <img src="./assets/emergency.png" alt="" class="w-[60px] h-[60px]">
-                    <span class="w-[24px] h-[24px]"><i class="fa-regular fa-heart"></i></span>
+                    <span class="heart w-[24px] h-[24px]"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <h4 class="text-[20px] font-bold mt-4 mb-0">National Emergency Number</h4>
                 <p class="text-gray-500">National Emergency</p>
@@ -82,13 +83,13 @@
                 <div class="flex items-center justify-center bg-gray-100 h-[25px] w-[60px]  rounded-3xl py-5"><p>All</p></div>
                 <div class="flex gap-2 mt-5 mb-0">
                     <button class="border-1 border-gray-400 p-3 w-1/2 rounded-lg"><i class="fa-regular fa-clone mr-3"></i>Coppy</button>
-                    <button class="border-1 border-gray-400 p-3 w-1/2 rounded-lg  bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-3"></i>Call</button>
+                    <button class="call-button border-1 border-gray-400 p-3 w-1/2 rounded-lg  bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-3"></i>Call</button>
                 </div>
             </div>
             <div class="card bg-white rounded-lg  min-h-[300px] max-w-[360px] p-5 shadow-md">
                 <div class="flex items-center justify-between">
                     <img src="./assets/emergency.png" alt="" class="w-[60px] h-[60px]">
-                    <span class="w-[24px] h-[24px]"><i class="fa-regular fa-heart"></i></span>
+                    <span class="heart  w-[24px] h-[24px]"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <h4 class="text-[20px] font-bold mt-4 mb-0">National Emergency Number</h4>
                 <p class="text-gray-500">National Emergency</p>
@@ -96,13 +97,14 @@
                 <div class="flex items-center justify-center bg-gray-100 h-[25px] w-[60px]  rounded-3xl py-5"><p>All</p></div>
                 <div class="flex gap-2 mt-5 mb-0">
                     <button class="border-1 border-gray-400 p-3 w-1/2 rounded-lg"><i class="fa-regular fa-clone mr-3"></i>Coppy</button>
-                    <button class="border-1 border-gray-400 p-3 w-1/2 rounded-lg  bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-3"></i>Call</button>
+                    <button class=" call-button border-1 border-gray-400 p-3 w-1/2 rounded-lg  bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-3"></i>Call</button>
                 </div>
             </div>
-            <div class="card row-span-3 bg-white rounded-lg  min-h-[300px] max-w-[360px] p-5 shadow-md">
+            
+            <div class="card bg-white rounded-lg  min-h-[300px] max-w-[360px] p-5 shadow-md">
                 <div class="flex items-center justify-between">
                     <img src="./assets/emergency.png" alt="" class="w-[60px] h-[60px]">
-                    <span class="w-[24px] h-[24px]"><i class="fa-regular fa-heart"></i></span>
+                    <span class="heart w-[24px] h-[24px]"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <h4 class="text-[20px] font-bold mt-4 mb-0">National Emergency Number</h4>
                 <p class="text-gray-500">National Emergency</p>
@@ -110,13 +112,13 @@
                 <div class="flex items-center justify-center bg-gray-100 h-[25px] w-[60px]  rounded-3xl py-5"><p>All</p></div>
                 <div class="flex gap-2 mt-5 mb-0">
                     <button class="border-1 border-gray-400 p-3 w-1/2 rounded-lg"><i class="fa-regular fa-clone mr-3"></i>Coppy</button>
-                    <button class="border-1 border-gray-400 p-3 w-1/2 rounded-lg  bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-3"></i>Call</button>
+                    <button class="call-button border-1 border-gray-400 p-3 w-1/2 rounded-lg  bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-3"></i>Call</button>
                 </div>
             </div>
             <div class="card bg-white rounded-lg  min-h-[300px] max-w-[360px] p-5 shadow-md">
                 <div class="flex items-center justify-between">
                     <img src="./assets/emergency.png" alt="" class="w-[60px] h-[60px]">
-                    <span class="w-[24px] h-[24px]"><i class="fa-regular fa-heart"></i></span>
+                    <span class="heart w-[24px] h-[24px]"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <h4 class="text-[20px] font-bold mt-4 mb-0">National Emergency Number</h4>
                 <p class="text-gray-500">National Emergency</p>
@@ -124,13 +126,13 @@
                 <div class="flex items-center justify-center bg-gray-100 h-[25px] w-[60px]  rounded-3xl py-5"><p>All</p></div>
                 <div class="flex gap-2 mt-5 mb-0">
                     <button class="border-1 border-gray-400 p-3 w-1/2 rounded-lg"><i class="fa-regular fa-clone mr-3"></i>Coppy</button>
-                    <button class="border-1 border-gray-400 p-3 w-1/2 rounded-lg  bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-3"></i>Call</button>
+                    <button class="call-button border-1 border-gray-400 p-3 w-1/2 rounded-lg  bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-3"></i>Call</button>
                 </div>
             </div>
             <div class="card bg-white rounded-lg  min-h-[300px] max-w-[360px] p-5 shadow-md">
                 <div class="flex items-center justify-between">
                     <img src="./assets/emergency.png" alt="" class="w-[60px] h-[60px]">
-                    <span class="w-[24px] h-[24px]"><i class="fa-regular fa-heart"></i></span>
+                    <span class="heart w-[24px] h-[24px]"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <h4 class="text-[20px] font-bold mt-4 mb-0">National Emergency Number</h4>
                 <p class="text-gray-500">National Emergency</p>
@@ -138,13 +140,13 @@
                 <div class="flex items-center justify-center bg-gray-100 h-[25px] w-[60px]  rounded-3xl py-5"><p>All</p></div>
                 <div class="flex gap-2 mt-5 mb-0">
                     <button class="border-1 border-gray-400 p-3 w-1/2 rounded-lg"><i class="fa-regular fa-clone mr-3"></i>Coppy</button>
-                    <button class="border-1 border-gray-400 p-3 w-1/2 rounded-lg  bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-3"></i>Call</button>
+                    <button class="call-button border-1 border-gray-400 p-3 w-1/2 rounded-lg  bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-3"></i>Call</button>
                 </div>
             </div>
             <div class="card bg-white rounded-lg  min-h-[300px] max-w-[360px] p-5 shadow-md">
                 <div class="flex items-center justify-between">
                     <img src="./assets/emergency.png" alt="" class="w-[60px] h-[60px]">
-                    <span class="w-[24px] h-[24px]"><i class="fa-regular fa-heart"></i></span>
+                    <span class="heart w-[24px] h-[24px]"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <h4 class="text-[20px] font-bold mt-4 mb-0">National Emergency Number</h4>
                 <p class="text-gray-500">National Emergency</p>
@@ -152,13 +154,13 @@
                 <div class="flex items-center justify-center bg-gray-100 h-[25px] w-[60px]  rounded-3xl py-5"><p>All</p></div>
                 <div class="flex gap-2 mt-5 mb-0">
                     <button class="border-1 border-gray-400 p-3 w-1/2 rounded-lg"><i class="fa-regular fa-clone mr-3"></i>Coppy</button>
-                    <button class="border-1 border-gray-400 p-3 w-1/2 rounded-lg  bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-3"></i>Call</button>
+                    <button class="call-button border-1 border-gray-400 p-3 w-1/2 rounded-lg  bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-3"></i>Call</button>
                 </div>
             </div>
             <div class="card bg-white rounded-lg  min-h-[300px] max-w-[360px] p-5 shadow-md">
                 <div class="flex items-center justify-between">
                     <img src="./assets/emergency.png" alt="" class="w-[60px] h-[60px]">
-                    <span class="w-[24px] h-[24px]"><i class="fa-regular fa-heart"></i></span>
+                    <span class=" heart w-[24px] h-[24px]"><i class=" fa-regular fa-heart"></i></span>
                 </div>
                 <h4 class="text-[20px] font-bold mt-4 mb-0">National Emergency Number</h4>
                 <p class="text-gray-500">National Emergency</p>
@@ -166,13 +168,13 @@
                 <div class="flex items-center justify-center bg-gray-100 h-[25px] w-[60px]  rounded-3xl py-5"><p>All</p></div>
                 <div class="flex gap-2 mt-5 mb-0">
                     <button class="border-1 border-gray-400 p-3 w-1/2 rounded-lg"><i class="fa-regular fa-clone mr-3"></i>Coppy</button>
-                    <button class="border-1 border-gray-400 p-3 w-1/2 rounded-lg  bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-3"></i>Call</button>
+                    <button class="call-button border-1 border-gray-400 p-3 w-1/2 rounded-lg  bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-3"></i>Call</button>
                 </div>
             </div>
             <div class="card bg-white rounded-lg  min-h-[300px] max-w-[360px] p-5 shadow-md">
                 <div class="flex items-center justify-between">
                     <img src="./assets/emergency.png" alt="" class="w-[60px] h-[60px]">
-                    <span class="w-[24px] h-[24px]"><i class="fa-regular fa-heart"></i></span>
+                    <span class="heart w-[24px] h-[24px]"><i class=" fa-regular fa-heart"></i></span>
                 </div>
                 <h4 class="text-[20px] font-bold mt-4 mb-0">National Emergency Number</h4>
                 <p class="text-gray-500">National Emergency</p>
@@ -180,27 +182,28 @@
                 <div class="flex items-center justify-center bg-gray-100 h-[25px] w-[60px]  rounded-3xl py-5"><p>All</p></div>
                 <div class="flex gap-2 mt-5 mb-0">
                     <button class="border-1 border-gray-400 p-3 w-1/2 rounded-lg"><i class="fa-regular fa-clone mr-3"></i>Coppy</button>
-                    <button class="border-1 border-gray-400 p-3 w-1/2 rounded-lg  bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-3"></i>Call</button>
-                </div>
-            </div>
-            <div class="card bg-white rounded-lg  min-h-[300px] max-w-[360px] p-5 shadow-md">
-                <div class="flex items-center justify-between">
-                    <img src="./assets/emergency.png" alt="" class="w-[60px] h-[60px]">
-                    <span class="w-[24px] h-[24px]"><i class="fa-regular fa-heart"></i></span>
-                </div>
-                <h4 class="text-[20px] font-bold mt-4 mb-0">National Emergency Number</h4>
-                <p class="text-gray-500">National Emergency</p>
-                <h1 class="font-bold text-[30px] mt-5 mb-0">999</h1>
-                <div class="flex items-center justify-center bg-gray-100 h-[25px] w-[60px]  rounded-3xl py-5"><p>All</p></div>
-                <div class="flex gap-2 mt-5 mb-0">
-                    <button class="border-1 border-gray-400 p-3 w-1/2 rounded-lg"><i class="fa-regular fa-clone mr-3"></i>Coppy</button>
-                    <button class="border-1 border-gray-400 p-3 w-1/2 rounded-lg  bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-3"></i>Call</button>
+                    <button class="call-button border-1 border-gray-400 p-3 w-1/2 rounded-lg  bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-3"></i>Call</button>
                 </div>
             </div>
 
         </div>
-     </div>
+        <div class=" md:w-1/4 bg-white  my-10 rounded-lg p-5">
+           <div class="flex items-center justify-between">
+             <p class="font-bold"><i class="text-gray-500 fa-solid fa-clock-rotate-left mr-3"></i>Call History</p>
+             <div class="w-[100px] bg-[#00A63E] flex items-center justify-center rounded-[132px] p-3 ml-4">
+                <p id="clear-btn" class="font-bold text-lg text-white ">Clear</p>
+                </div>
+           </div>
+           <div id="history-container" >
+
+           </div>
+           
+        </div>
+
+    </div>
+    </div>
     
+    <script src="./index.js"></script>
 
   </body>
 </html>
