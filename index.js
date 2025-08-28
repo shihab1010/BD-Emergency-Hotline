@@ -70,3 +70,17 @@ for (const callButton of callButtons) {
 document.getElementById("clear-btn").addEventListener("click", function () {
   document.getElementById("history-container").innerHTML = "";
 });
+
+// copy button
+const copyButtons = document.getElementsByClassName("copy-btn");
+for (const copyButton of copyButtons) {
+  copyButton.addEventListener("click", function () {
+    let copyCount = parseInt(getInnerText("copy-count"));
+
+    copyCount++;
+
+    document.getElementById("copy-count").innerText = copyCount;
+
+    alert("Text coppied");
+  });
+}
